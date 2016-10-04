@@ -3,11 +3,12 @@ class ForumThreadsController < ApplicationController
   before_action :set_forum_thread, except: [:index, :new, :create]
   
   def index
-    #
+    @forum_threads = ForumThread.all
   end
   
   def show
-    #
+    #@forum_thread = ForumThread.find(params[:id])
+    @forum_post = ForumPost.new
   end
   
   def new

@@ -13,6 +13,7 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.2.0.2'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'byebug'
 end
 
